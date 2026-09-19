@@ -155,6 +155,77 @@ body {
     transform: rotate(-4deg);
 }
 
+/* =====================================
+   PATINS DECORATIVOS DO HEADER
+===================================== */
+
+.navbar {
+    position: relative;
+}
+
+
+/* configuração dos dois patins */
+
+.patins-header {
+    position: absolute;
+
+    width: 105px;
+    height: auto;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    object-fit: contain;
+
+    pointer-events: none;
+    user-select: none;
+
+    z-index: 2;
+}
+
+
+/* QUAD - lado esquerdo do título */
+
+.patins-quad {
+    left: 1.5%;
+
+    transform:
+        translateY(-50%)
+        rotate(-5deg);
+}
+
+
+/* INLINE - lado direito do título */
+
+.patins-inline {
+    left: 27%;
+
+    transform:
+        translateY(-50%)
+        rotate(4deg);
+}
+
+
+/* celular */
+
+@media (max-width: 700px) {
+
+    .patins-header {
+        width: 65px;
+        opacity: 0.85;
+    }
+
+    .patins-quad {
+        left: 1%;
+    }
+
+    .patins-inline {
+        left: auto;
+        right: 1%;
+    }
+}
+
 
 /* =================================================
    MENU
