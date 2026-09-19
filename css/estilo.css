@@ -184,7 +184,7 @@ body {
 }
 
 .patins-quad {
-    width: 90px;
+    width: 100px;
 
     left: 1.5%;
 
@@ -194,9 +194,9 @@ body {
 }
 
 .patins-inline {
-    width: 100px;
+    width: 130px;
 
-    left: 26.5%;
+    left: 20%;
 
     transform:
         translateY(-50%)
