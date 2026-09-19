@@ -169,7 +169,6 @@ body {
 .patins-header {
     position: absolute;
 
-    width: 70px;
     height: auto;
 
     top: 50%;
@@ -184,10 +183,9 @@ body {
     z-index: 2;
 }
 
-
-/* QUAD - lado esquerdo do título */
-
 .patins-quad {
+    width: 90px;
+
     left: 1.5%;
 
     transform:
@@ -195,11 +193,10 @@ body {
         rotate(-5deg);
 }
 
-
-/* INLINE - lado direito do título */
-
 .patins-inline {
-    left: 27%;
+    width: 100px;
+
+    left: 26.5%;
 
     transform:
         translateY(-50%)
