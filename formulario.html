@@ -1,50 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem</title>
-    <link rel="icon" type="image/PNG" href="img/LogoXV.png">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- importação do jquery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css"> <!-- importação do toast pro envio do formulário -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script> <!-- importação do toast pro envio do formulário -->
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mensagem | Festa Ploc</title>
+
+    <link rel="icon"
+          type="image/png"
+          href="img/LogoXV.png">
+
+    <link rel="stylesheet"
+          href="css/estilo.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
+
 </head>
+
 <body>
-    
-    <header class="navbar">
-        <div class="logo">
-            <div class="logo1">
-                <h1>XV</h1> 
-            </div>
-            <div class="logo2">
-                <h1>Larissa</h1>
-            </div>
-        </div> 
+<header class="navbar">
 
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="playlist.html">Playlist</a>
-            <a id="botao" href="formulario.html">Contato</a>
+    <a href="index.html" class="logo">
+
+        <div class="logo-principal">
+
+            <span class="logo-festa">
+                FESTA
+            </span>
+
+            <span class="logo-ploc">
+                PLOC
+            </span>
+
         </div>
-    </header>
 
-    <section class="formulario-wrapper">
-        <section class="formulario">
-            <h3>ENVIE SUA MENSAGEM</h3>
-            <form onsubmit="event.preventDefault(); abrirGmail();">
-                <input class="assunto" type="text" id="assunto" name="assunto" placeholder="Assunto" required>
-                <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <script src="js/index.js"></script>
-            <script>
+        <span class="logo-yu">
+            Niver da Yu
+        </span>
+    </a>
 
-            </script>
-        </section>
+    <nav class="menu">
+
+        <a href="index.html">
+            HOME
+        </a>
+
+        <a href="playlist.html">
+            PLAYLIST
+        </a>
+
+        <a
+            href="formulario.html"
+            class="menu-contato ativo-contato"
+        >
+            CONTATO
+        </a>
+    </nav>
+</header>
+
+<main class="contato-page">
+    <!-- DECORAÇÕES -->
+
+    <img
+        src="img/decoracoes/fx_amarela.png"
+        class="arte contato-fx-amarelo"
+        alt=""
+    >
+
+    <img
+        src="img/decoracoes/seta_rosa.png"
+        class="arte contato-seta"
+        alt=""
+    >
+
+    <img
+        src="img/decoracoes/x_roxo.png"
+        class="arte contato-x"
+        alt=""
+    >
+
+    <img
+        src="img/decoracoes/triangulo_azul.png"
+        class="arte contato-triangulo"
+        alt=""
+    >
+
+    <img
+        src="img/decoracoes/raio_rosa.png"
+        class="arte contato-raio"
+        alt=""
+    >
+
+    <img
+        src="img/decoracoes/bolinhas_rosa.png"
+        class="arte contato-bolinhas"
+        alt=""
+    >
+
+    <section class="formulario">
+        <img
+            src="img/decoracoes/coracao_rosa.png"
+            class="coracao-formulario"
+            alt=""
+        >
+
+        <span class="mini-titulo">
+            DEIXE SEU RECADO
+        </span>
+
+        <h1>
+            MANDE UMA<br>
+            <strong>MENSAGEM!</strong>
+        </h1>
+
+        <p>
+            Escreva uma mensagem especial para a Yu
+            e faça parte dessa festa!
+        </p>
+
+        <form
+            onsubmit="event.preventDefault(); abrirGmail();"
+        >
+
+            <label for="assunto">
+                ASSUNTO
+            </label>
+
+            <input
+                type="text"
+                id="assunto"
+                name="assunto"
+                placeholder="Digite o assunto..."
+                required
+            >
+
+            <label for="mensagem">
+                SUA MENSAGEM
+            </label>
+
+            <textarea
+                name="mensagem"
+                id="mensagem"
+                placeholder="Escreva sua mensagem..."
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">
+                ENVIAR MENSAGEM
+            </button>
+
+        </form>
+
     </section>
-    <footer class="footer">
-        <p>Copyright © 2026 - XV Larissa. Todos os direitos reservados.</p>
-    </footer>
+
+</main>
+
+<footer class="footer">
+
+    <p>
+        Copyright © 2026 - Niver da Yu.
+        Todos os direitos reservados.
+    </p>
+
+    <img
+        src="img/decoracoes/coracao_rosa.png"
+        class="footer-coracao"
+        alt=""
+    >
+</footer>
+
+<script src="js/index.js"></script>
+
 </body>
 </html>

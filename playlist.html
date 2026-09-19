@@ -1,80 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playlist</title>
-    <link rel="icon" type="image/PNG" href="img/LogoXV.png">
+
+    <title>Playlist | Festa Ploc</title>
+
+    <link rel="icon" type="image/png" href="img/LogoXV.png">
     <link rel="stylesheet" href="css/estilo.css">
-
 </head>
+
 <body>
-    
-    <header class="navbar">
-        <div class="logo">
-            <div class="logo1">
-                <h1>XV</h1> 
-            </div>
-            <div class="logo2">
-                <h1>Larissa</h1>
-            </div>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-principal">
+            <span class="logo-festa">FESTA</span>
+            <span class="logo-ploc">PLOC</span>
         </div>
 
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="playlist.html">Playlist</a>
-            <a id="botao" href="formulario.html">Contato</a>
+        <span class="logo-yu">
+            Niver da Yu
+        </span>
+    </a>
+
+    <nav class="menu">
+        <a href="index.html">
+            HOME
+        </a>
+
+        <a href="playlist.html" class="ativo">
+            PLAYLIST
+        </a>
+
+        <a href="formulario.html" class="menu-contato">
+            CONTATO
+        </a>
+    </nav>
+
+</header>
+
+<main class="playlist-page">
+
+    <!-- DECORAÇÕES -->
+
+    <img src="img/decoracoes/fx_roxo.png"
+         class="arte playlist-fx-roxo" alt="">
+
+    <img src="img/decoracoes/fx_azul.png"
+         class="arte playlist-fx-azul" alt="">
+
+    <img src="img/decoracoes/raio_azul.png"
+         class="arte playlist-raio" alt="">
+
+    <img src="img/decoracoes/estrela_rosa.png"
+         class="arte playlist-estrela" alt="">
+
+    <img src="img/decoracoes/ziguezague_amarelo.png"
+         class="arte playlist-ziguezague" alt="">
+
+    <img src="img/decoracoes/triangulo_rosa.png"
+         class="arte playlist-triangulo" alt="">
+
+    <img src="img/decoracoes/rabisco_rosa.png"
+         class="arte playlist-rabisco-rosa" alt="">
+
+    <img src="img/decoracoes/rabisco_azul.png"
+         class="arte playlist-rabisco-azul" alt="">
+
+    <img src="img/decoracoes/bolinhas_preto.png"
+         class="arte playlist-bolinhas" alt="">
+
+    <section class="playlist-cabecalho">
+
+        <div class="titulo-grafico">
+            <img
+                src="img/decoracoes/fx_rosa.png"
+                class="fundo-titulo"
+                alt=""
+            >
+            <h1>PLAYLIST</h1>
         </div>
-    </header>
 
-    <section class="awards-playlist-section">
-        <h3>PLAYLIST</h3>
-        <p>Aqui temos a playlist da festa e a lsita de musicas do karaoke.</p>
+        <p>
+            Escolha sua música e arrase no karaokê!
+        </p>
 
-        <div class="comentario">
+    </section>
 
-            <div class="awards-playlist-card">
-                <h4>Playlist da Festa (Spotify)</h4>
-            <div class="codigo-colapsado">
-                <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
-                    <a href="https://open.spotify.com/playlist/2qxYJtZoSzm2t2NMQmYjQe?si=ln84QU5XQqudaKoqUY-M6Q&utm_source=copy-link&pi=Pwp08qQ1Tdqb-">
-                        <img src="img/spotify.png" style="display: flex; flex-direction: column; border-radius: 10px;">
-                    </a>
-                </div>        
-            </div>
-            </div>
+    <section class="playlist-card">
 
-            <div class="awards-playlist-card">
-                <h4>Catálogo de Músicas (Karaoke)</h4>
-                <div class="barra-pesquisa">
-                    <input 
-                    type="text" 
-                    id="pesquisa"
-                    placeholder="Pesquisar música ou cantor..."
-                    >
-                </div>
-                
-            <div class="codigo-colapsado">
-                <table class="tabela-musicas">
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Cantor</th>
-                            <th>Música</th>
-                        </tr>
-                    </thead>
+        <img
+            src="img/decoracoes/x_amarelo.png"
+            class="x-card"
+            alt=""
+        >
 
-                    <tbody id="catalogo">
-                    </tbody>
-                </table>
-            </div>
-            </div>
+        <h2>CATÁLOGO DE MÚSICAS</h2>
+
+        <div class="barra-pesquisa">
+
+            <span class="icone-pesquisa">⌕</span>
+
+            <input
+                type="text"
+                id="pesquisa"
+                placeholder="Pesquisar música ou cantor..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="codigo-colapsado">
+            <table class="tabela-musicas">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Cantor</th>
+                        <th>Música</th>
+                    </tr>
+                </thead>
+                <tbody id="catalogo"></tbody>
+            </table>
         </div>
     </section>
-    <footer class="footer">
-        <p>Copyright © 2026 - XV Larissa. Todos os direitos reservados.</p>
-    </footer>
-    <script src="js/catalogo.js"></script>
-    <script src="js/index.js"></script>
+
+</main>
+
+<footer class="footer">
+
+    <p>
+        Copyright © 2026 - Niver da Yu.
+        Todos os direitos reservados.
+    </p>
+
+    <img
+        src="img/decoracoes/coracao_rosa.png"
+        class="footer-coracao"
+        alt=""
+    >
+
+</footer>
+
+<script src="js/catalogo.js"></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>
